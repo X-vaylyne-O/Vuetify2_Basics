@@ -11,8 +11,7 @@
 				 v-bind="props"
 				 gradient="to top right, rgba(124, 77, 255,.8), rgba(179, 136, 255,.6)"></v-img>
 			</template>
-			<!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
-			<v-btn icon>
+			<v-btn to="/" icon>
 				<v-icon>mdi-skip-backward-outline</v-icon>
 			</v-btn>
 			<v-toolbar-title>Allison Broughton</v-toolbar-title>

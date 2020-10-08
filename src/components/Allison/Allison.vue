@@ -1,30 +1,40 @@
 <template>
-	<v-container fluid fill-height class="grey darken-4">
+	<v-container fluid fill-height class="pa-5">
 		<v-row class="ma-0" align="center" justify="center">
-			<AppBar></AppBar>
-			<!-- <Banner></Banner> -->
-		</v-row>
-		<v-row class="ma-0" align="center" justify="center">
-			<v-card>
-				<v-card-title>Testing</v-card-title>
-				<v-card-text>
-					bla bla bla bla bla bla bla bla bla
-				</v-card-text>
-			</v-card>
+			<v-col>
+				<v-card>
+					<v-card-title class="deep-purple accent-1">
+						<v-avatar
+						 color="teal accent-2"
+						 size="40">
+							<img
+							 src="./media/butterfly.png"
+							 alt="Butterfly">
+						</v-avatar>
+						<v-spacer></v-spacer>
+						Allison Broughton
+					</v-card-title>
+					<v-card-text class="pa-5">
+						{{ cardText }}
+					</v-card-text>
+				</v-card>
+			</v-col>
 		</v-row>
 	</v-container>
 </template>
 <script>
-import AppBar from './components/appbar.vue';
+// import AppBar from './components/appbar.vue';
 // import Banner from './components/banner.vue';
 export default {
 	name: "Allisons_Page",
 	components: {
-		AppBar,
+		// AppBar,
 		// Banner
 	},
 	data() {
-		return {}
+		return {
+			cardText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+		}
 	},
 	methods: {},
 	computed: {},
