@@ -9,7 +9,7 @@ const Kahlil = () => import(/* webpackChunkName: "services" */ './components/Kah
 const Allison = () => import(/* webpackChunkName: "services" */ './components/Allison/Allison.vue')
 const Brooke = () => import(/* webpackChunkName: "services" */ './components/Brooke/Brooke.vue')
 const Alex = () => import(/* webpackChunkName: "services" */ './components/Alex/Alex.vue')
-const Kyle = () => import(/* webpackChunkName: "services" */ './components/Kyle/Kyle.vue')
+const Kyle = () => import(/* webpackChunkName: "services" */ './components/Kyle')
 const Marvin = () => import(/* webpackChunkName: "services" */ './components/Marvin/Marvin.vue')
 const Hunter = () => import(/* webpackChunkName: "services" */ './components/Hunter/Hunter.vue')
 const Reagan = () => import(/* webpackChunkName: "services" */ './components/Reagan/Reagan.vue')
