@@ -1,7 +1,7 @@
 <template>
-	<v-container fluid fill-height class="pa-5">
-		<v-row class="ma-0" align="center" justify="center">
-			<v-col>
+	<v-container fluid fill-height class="pa-5" id="allisonBackground">
+		<v-row class="ma-0 white" align="center" justify="center">
+			<v-col class="glow">
 				<v-card>
 					<v-card-title class="deep-purple accent-1">
 						<v-avatar
@@ -12,7 +12,25 @@
 							 alt="Butterfly">
 						</v-avatar>
 						<v-spacer></v-spacer>
-						Allison Broughton
+						Lorem Ipsum
+					</v-card-title>
+					<v-card-text class="pa-5">
+						{{ cardText }}
+					</v-card-text>
+				</v-card>
+			</v-col>
+			<v-col class="glow">
+				<v-card>
+					<v-card-title class="deep-purple accent-1">
+						<v-avatar
+						 color="teal accent-2"
+						 size="40">
+							<img
+							 src="./media/butterfly.png"
+							 alt="Butterfly">
+						</v-avatar>
+						<v-spacer></v-spacer>
+						Lorem Ipsum
 					</v-card-title>
 					<v-card-text class="pa-5">
 						{{ cardText }}
@@ -33,7 +51,7 @@ export default {
 	},
 	data() {
 		return {
-			cardText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+			cardText: 'Not gonna lie - I just want the tshirt.'
 		}
 	},
 	methods: {},
@@ -43,4 +61,16 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+#allisonBackground {
+	background-image: url('./media/scavenger.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.glow {
+	/*box-shadow: 0px 0px 40px 20px #0ff;*/
+	box-shadow:
+        0 0 60px 30px #fff,  /* inner white */
+        0 0 100px 60px #f0f, /* middle magenta */
+        0 0 140px 90px #0ff; /* outer cyan */
+}
 </style>
