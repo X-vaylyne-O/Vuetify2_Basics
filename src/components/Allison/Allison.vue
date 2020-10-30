@@ -12,7 +12,7 @@
 							 alt="Butterfly">
 						</v-avatar>
 						<v-spacer></v-spacer>
-						Lorem Ipsum
+						T-Shirts!
 					</v-card-title>
 					<v-card-text class="pa-5">
 						{{ cardText }}
